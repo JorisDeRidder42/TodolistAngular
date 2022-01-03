@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+<input type="text" placeholder="Enter a new task" #task />
+<button (click)="addTask(task.value)">Add new Task</button>
+
+<ul *ngFor="let item of list">
+<input type="checkbox"> {{item.name }} <button (click)="removeTask(item.id)"><img src="../assets/icons/trash.svg"></button>
+</ul>
