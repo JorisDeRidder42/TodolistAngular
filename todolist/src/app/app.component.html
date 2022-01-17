@@ -1,7 +1,9 @@
-<h1>{{ title }}</h1>
-<input type="text" placeholder="Enter a new task" #task />
-<button (click)="addTask(task.value)">Add new Task</button>
+<h1 class="title">{{ title }}</h1>
+<div class="form">
+    <input class="input" type="text" placeholder="Enter a new task" #task />
+    <button class="btn-grad" (click)="addTask(task.value)">Add new Task</button>
+</div>
 
-<ul *ngFor="let item of list">
-<input type="checkbox"> {{item.name }} <button (click)="removeTask(item.id)"><img src="../assets/icons/trash.svg"></button>
-</ul>
+    <ul class="list" *ngFor="let item of list">
+        <input type="checkbox" class="strike"> <span class="item">{{ item.name }}</span> <button class="trashbutton" (click)="removeTask(item.id)"><img class="trash" src="../assets/icons/trash.svg"></button>
+    </ul>

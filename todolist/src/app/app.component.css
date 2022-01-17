@@ -1,0 +1,107 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 3rem;
+    color: #0e0e0e;
+    text-align: center;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    margin-right: 0;   
+    padding: 10px;
+    border: 2px solid #0e0e0e;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.btn-grad {
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 0;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    background-color: blue;            
+    display: block;
+    border:none;
+ }
+
+ .btn-grad:hover {
+    background-color: green;
+   color: #fff;
+   text-decoration: none;
+   transition: 0.5s;
+ }
+
+ .list{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 15px 10px 12px 40px;
+    list-style-type: none;
+ }
+
+ .trash{
+     margin-left: 2rem;
+ }
+
+.trashbutton{
+    border:none;
+    background-color: #fff;
+}
+
+.item{
+    margin-left: 2rem;
+    font-size: 	2rem;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+   height: 3em;
+   width: 3em;
+   outline: none;
+   background-color: #d5d5d5;
+   border-radius: 0.5em;
+   cursor: pointer; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+input[type="checkbox"]:hover{
+   background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked + span{
+    text-decoration: line-through;
+ }
+ input[type="checkbox"]:checked::after{
+    display: block;
+ }
+
+ 
+input[type="checkbox"]:checked{
+    background: url(../assets/icons/checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+ }
+
+
